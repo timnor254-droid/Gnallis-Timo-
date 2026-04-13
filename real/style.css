@@ -8,6 +8,7 @@ display: flex;
 text-align: center;
 display: block;
 padding: 0px;
+padding-right: 300px;
 margin: 0px;
 }
 ul a {
@@ -21,7 +22,6 @@ ul a {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: 900;
-
 }
 nav ul li {
     display: flex;
