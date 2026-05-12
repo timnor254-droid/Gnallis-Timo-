@@ -1,5 +1,14 @@
 body{
     margin: 0px;
+    background-color: rgb(236, 236, 236);
+    padding-top: 70px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 nav ul {
 background-color:  #0400d8;
@@ -40,6 +49,7 @@ nav ul li {
     opacity: 0;
     transition: max-height 0.4s, opacity 0.3s ease;
     text-align: center;
+    position: fixed;
 }
 .meny.aktiv {
     max-height: 300px;
@@ -81,9 +91,14 @@ nav ul li {
 }
 h2{
     text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 .post{
     margin: 20px;
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
 }
 .username{
     font-size: 20px;
@@ -108,8 +123,8 @@ h2{
 }
 @media  (min-width: 992px) {
     .post{
-        margin: 40px;
-        margin-bottom: 70px;
+        margin: 20px;
+        margin-bottom: 20px;
     }
     .username{
     font-size: 30px;
@@ -121,11 +136,14 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+h2{
+    font-size: 30px;
+}
 }
 @media  (min-width: 1312px) {
     .post{
-        margin: 50px;
-        margin-bottom: 90px;
+        margin: 20px;
+        margin-bottom: 20px;
     }
     .username{
     font-size: 30px;
