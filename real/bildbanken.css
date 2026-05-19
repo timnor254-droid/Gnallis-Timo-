@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    box-sizing: border-box;
 }
 * {
     box-sizing: border-box;
@@ -37,7 +38,7 @@ nav ul li {
     top: 60px;
     left: 0;
     background-color: #0400d8;
-    width: auto;
+    width: 100%;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
@@ -87,6 +88,28 @@ h2 {
     margin-top: 20px;
      
 }
+.bild-gallery{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+}
+.bild-gallery img{
+    width: 100%;
+}
 
+@media (min-width: 688px){
+    .bild-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 992px){
+.bild-gallery{
+       
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
 
 
