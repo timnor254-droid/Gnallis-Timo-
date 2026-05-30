@@ -14,11 +14,9 @@ const lightboxImg = document.querySelector('#lightbox-img');
 
 const closeBtn = document.querySelector('#close-btn');
 
-const galleriBilder = document.querySelectorAll('.bild-gallery img');
-
-galleriBilder.forEach(img => {
+thumbs.forEach(img => {
   img.addEventListener('click', () => {
-    const fullSizeSrc = img.getAttribute('src');
+    const fullSizeSrc = img.getAttribute('data-full');
     lightboxImg.src = fullSizeSrc;
     lightbox.classList.remove('lightbox-hidden');
     lightbox.classList.add('lightbox-visible');
