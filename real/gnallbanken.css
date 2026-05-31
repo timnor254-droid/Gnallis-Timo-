@@ -43,7 +43,7 @@ nav ul li {
     top: 60px;
     left: 0;
     background-color: #0400d8;
-    width: auto;
+    width: 100%;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
@@ -75,7 +75,7 @@ nav ul li {
     margin: 0 auto;
 }
 .meny ul {
-    display: inline-block;
+    display: block;
     padding: 0;
     margin: 0 auto;
     text-align: center;
@@ -89,7 +89,7 @@ nav ul li {
     padding: 15px;
     text-align: center;
 }
-h2{
+h1{
     text-align: center;
     padding-bottom: 40px;
     padding-top: 20px;
@@ -119,6 +119,9 @@ h2{
 }
 .content{
     font-size: 25px;
+}
+.meny{
+    width: auto;
 }
 }
 @media  (min-width: 992px) {

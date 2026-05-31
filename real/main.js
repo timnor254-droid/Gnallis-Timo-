@@ -13,7 +13,7 @@ const lightbox = document.querySelector('#lightbox');
 const lightboxImg = document.querySelector('#lightbox-img');
 
 const closeBtn = document.querySelector('#close-btn');
-
+if (lightbox && closeBtn) {
 thumbs.forEach(img => {
   img.addEventListener('click', () => {
     const fullSizeSrc = img.getAttribute('data-full');
@@ -37,3 +37,5 @@ lightbox.addEventListener('click', (event) => {
   }
 
 });
+
+}

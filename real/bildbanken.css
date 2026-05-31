@@ -69,7 +69,7 @@ nav ul li {
     margin: 0 auto;
 }
 .meny ul {
-    display: inline-block;
+    display: block;
     padding: 0;
     margin: 0 auto;
     text-align: center;
@@ -102,6 +102,9 @@ h2 {
     .bild-gallery{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .meny{
+        width: auto;
     }
 }
 @media (min-width: 992px){
